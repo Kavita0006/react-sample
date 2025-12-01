@@ -21,7 +21,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postinstall": "flowbite-react patch && flowbite-react register"
+    "postinstall": "flowbite-react patch && flowbite-react register",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -42,6 +44,8 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^3.4.17"
-  }
+  },
+  "homepage": "https://github.com/Kavita0006/react-sample.git"
 }
